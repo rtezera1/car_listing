@@ -6,4 +6,8 @@ FactoryGirl.define do
     mileage '120000'
   end
   
+  factory :manufacturer do
+    name 'BMW'
+    country 'Germany'
+  end
 end
