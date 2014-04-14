@@ -11,5 +11,9 @@ describe Car do
       it { should have_valid(:mileage).when('120000') }
       it {should_not have_valid(:mileage).when(nil, '', 'dskfjskdf') }
   end
+
+  describe 'validation associations' do 
+    it { should belong_to :manufacturer }
+  end
   pending "add some examples to (or delete) #{__FILE__}"
 end

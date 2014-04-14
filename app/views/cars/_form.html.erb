@@ -3,5 +3,8 @@
   <%= f.input :year %>
   <%= f.input :mileage %>
   <%= f.input :description %>
+  <%= f.collection_select :manufacturer_id, Manufacturer.all, :id, 
+                          :name, prompt: true %><br>
   <%= f.button :submit %>
-<% end %>
+
+  <% end %>
